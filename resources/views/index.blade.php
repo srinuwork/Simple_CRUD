@@ -48,5 +48,6 @@
             <div class="empty-msg">📭 No users found. Click "Add New User" to create one.</div>
         @endif
     </div>
+    {{ $users->links('vendor.pagination.custom') }}
 </div>
 @endsection

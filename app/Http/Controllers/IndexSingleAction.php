@@ -15,7 +15,7 @@ class IndexSingleAction extends Controller
 
     public function __invoke(Request $request)
     {
-        $users = User::all();
+        $users = User::paginate(10);
         return view('index', ['users' => $users]);
     }
 }
